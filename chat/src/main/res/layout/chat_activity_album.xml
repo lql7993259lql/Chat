@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_send_photo_color"
+    android:orientation="vertical"
+    tools:context=".AlbumActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_send_photo_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/chat_send_photo_color"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/chat_send_photo_color"
+            android:gravity="center" >
+
+            <ImageView
+                android:contentDescription="@string/chat_content_description"
+                android:id="@+id/iv_send_photo_back1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/chat_jiantou1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_send_photo_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="@string/chat_send_photo"
+            android:textColor="@color/chat_title_background"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/chat_send_photo_color"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/bt_send_photo1"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:background="@drawable/chat_send"
+                android:gravity="center"
+                android:text="@string/chat_send1"
+                android:textColor="@color/chat_title_background"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" >
+
+        <ImageView
+            android:contentDescription="@string/chat_content_description"
+            android:id="@+id/iv_send_ptoto1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--
+         <LinearLayout
+        android:id="@+id/ll_send_photo_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.22"
+        android:background="@color/send_photo_color"
+        android:orientation="horizontal" />
+    -->
+
+</LinearLayout>

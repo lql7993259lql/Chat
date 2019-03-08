@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp" >
+
+    <TextView
+        android:id="@+id/tv_robot_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="3dp"
+        android:paddingRight="12dp"
+        android:singleLine="false"
+        android:text="@string/chat_robot_title"
+        android:textColor="@color/chat_kefutextcolor"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_robot_title"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/chat_kefutextcolor"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_robot_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_no"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/chat_kefutextcolor"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_no_know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_robot_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_yes"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/chat_kefutextcolor"
+        android:textSize="17sp" />
+
+</RelativeLayout>
